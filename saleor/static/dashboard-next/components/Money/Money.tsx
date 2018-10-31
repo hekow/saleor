@@ -28,4 +28,5 @@ export const Money: React.StatelessComponent<MoneyProps> = ({
   </LocaleConsumer>
 );
 
+Money.displayName = "Money";
 export default Money;
