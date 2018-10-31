@@ -12,7 +12,8 @@ from .account.mutations import (
     StaffUpdate, AddressCreate, AddressUpdate, AddressDelete)
 from .account.types import AddressValidationData, AddressValidationInput, User
 from .account.resolvers import (
-    resolve_address_validator, resolve_customers, resolve_staff_users)
+    resolve_address_validator, resolve_customers, resolve_staff_users,
+    resolve_user)
 from .core.types import TaxedMoney, ReportingPeriod
 from .core.mutations import CreateToken, VerifyToken
 from .core.fields import PrefetchingConnectionField
@@ -177,7 +178,7 @@ class Query(ProductQueries):
 
     @permission_required('account.manage_users')
     def resolve_user(self, info, id):
-        return graphene.Node.get_node_from_global_id(info, id, User)
+        return resolve_user(info, id)
 
     @permission_required('account.manage_users')
     def resolve_customers(self, info, query=None, **kwargs):
