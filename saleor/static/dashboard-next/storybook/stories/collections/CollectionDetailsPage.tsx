@@ -24,7 +24,8 @@ const props: CollectionDetailsPageProps = {
   onCollectionRemove: () => undefined,
   onImageDelete: () => undefined,
   onImageUpload: () => undefined,
-  onSubmit: () => undefined
+  onSubmit: () => undefined,
+  onProductUnassign: () => undefined
 };
 
 storiesOf("Views / Collections / Collection details", module)

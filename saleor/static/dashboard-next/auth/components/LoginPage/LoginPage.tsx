@@ -143,5 +143,5 @@ const LoginCard = decorate<LoginCardProps>(
     );
   }
 );
-
+LoginCard.displayName = "LoginCard";
 export default LoginCard;
