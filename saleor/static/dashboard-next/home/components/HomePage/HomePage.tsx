@@ -107,4 +107,5 @@ const HomePage = decorate<HomePageProps>(
     </Container>
   )
 );
+HomePage.displayName = "HomePage";
 export default HomePage;

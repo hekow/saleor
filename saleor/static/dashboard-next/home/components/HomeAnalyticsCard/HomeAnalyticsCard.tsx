@@ -76,4 +76,5 @@ const HomeAnalyticsCard = decorate<HomeAnalyticsCardProps>(
     </Card>
   )
 );
+HomeAnalyticsCard.displayName = "HomeAnalyticsCard";
 export default HomeAnalyticsCard;

@@ -81,4 +81,5 @@ const HomeProductListCard = decorate<HomeProductListCardProps>(
     );
   }
 );
+HomeProductListCard.displayName = "HomeProductListCard";
 export default HomeProductListCard;
