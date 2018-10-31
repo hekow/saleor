@@ -106,4 +106,5 @@ const CustomerEditPage: React.StatelessComponent<CustomerEditPageProps> = ({
     </Form>
   );
 };
+CustomerEditPage.displayName = "CustomerEditPage";
 export default CustomerEditPage;

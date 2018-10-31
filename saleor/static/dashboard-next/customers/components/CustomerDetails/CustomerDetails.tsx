@@ -117,4 +117,5 @@ const CustomerDetails = decorate<CustomerDetailsProps>(
     </Card>
   )
 );
+CustomerDetails.displayName = "CustomerDetails";
 export default CustomerDetails;

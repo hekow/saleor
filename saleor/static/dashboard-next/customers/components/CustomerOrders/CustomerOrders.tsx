@@ -135,4 +135,5 @@ const CustomerOrders = decorate<CustomerOrdersProps>(
     </Card>
   )
 );
+CustomerOrders.displayName = "CustomerOrders";
 export default CustomerOrders;

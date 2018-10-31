@@ -133,4 +133,5 @@ const CustomerListPage = decorate<CustomerListPageProps>(
     </Container>
   )
 );
+CustomerListPage.displayName = "CustomerListPage";
 export default CustomerListPage;

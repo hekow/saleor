@@ -81,4 +81,5 @@ const CustomerAddress = decorate<CustomerAddressProps>(
     </Card>
   )
 );
+CustomerAddress.displayName = "CustomerAddress";
 export default CustomerAddress;

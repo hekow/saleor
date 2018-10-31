@@ -138,4 +138,5 @@ const CustomerDetailsPage = decorate<CustomerDetailsPageProps>(
     </Container>
   )
 );
+CustomerDetailsPage.displayName = "CustomerDetailsPage";
 export default CustomerDetailsPage;
