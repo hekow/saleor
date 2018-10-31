@@ -32,4 +32,5 @@ const OrderPaymentReleaseDialog: React.StatelessComponent<
     </DialogActions>
   </Dialog>
 );
+OrderPaymentReleaseDialog.displayName = "OrderPaymentReleaseDialog";
 export default OrderPaymentReleaseDialog;
