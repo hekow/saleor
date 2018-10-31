@@ -176,7 +176,7 @@ class Query(ProductQueries):
     def resolve_checkouts(self, info, query=None, **kwargs):
         resolve_checkouts(info, query)
 
-    @permission_required('account.manage_users')
+    @login_required
     def resolve_user(self, info, id):
         return resolve_user(info, id)
 
