@@ -8,7 +8,7 @@ from graphene_django.fields import DjangoConnectionField
 
 from .account.mutations import (
     CustomerCreate, CustomerDelete, CustomerUpdate, CustomerPasswordReset,
-    CustomerRegister, LoggedCustomerUpdate, PasswordReset, SetPassword,
+    CustomerRegister, LoggedUserUpdate, PasswordReset, SetPassword,
     StaffCreate, StaffDelete, StaffUpdate, AddressCreate, AddressUpdate,
     AddressDelete)
 from .account.types import AddressValidationData, AddressValidationInput, User
@@ -283,7 +283,7 @@ class Mutations(ProductMutations):
     password_reset = PasswordReset.Field()
 
     customer_create = CustomerCreate.Field()
-    logged_customer_update = LoggedCustomerUpdate.Field()
+    logged_user_update = LoggedUserUpdate.Field()
     customer_update = CustomerUpdate.Field()
     customer_delete = CustomerDelete.Field()
     customer_password_reset = CustomerPasswordReset.Field()
