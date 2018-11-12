@@ -34,3 +34,12 @@ dist/
 webpack-bundle.json
 /templates/templated_email/compiled/*
 !/templates/templated_email/compiled/.gitkeep
+
+/Lib/
+/Scripts/
+!/Scripts/deploy_master.sh
+!/Scripts/dpush_static.sh
+/Include/
+pyenv.cfg
+pip-selfcheck.json
+/share/
